@@ -1,0 +1,194 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+@import "https://fonts.googleapis.com/css?family=Righteous";
+
+:root {
+	--white: rgb(245, 245, 245);
+	--black: rgba(10, 10, 10, .8);
+	--color-theme: #2f2e41;
+
+	--background-theme: var(--white);
+
+	--linear-theme: linear-gradient(to right,#ff6835, #ffae35);
+	--linear-premium: linear-gradient(to right,#d435ff, #4135ff);
+}
+
+* {
+	user-select: none;
+}
+
+body {
+	font-family: 'Poppins', Arial, Sans-serif, Helvetica;
+	background: var(--background-theme);
+	font-size: 14px;
+	line-height: 22px;
+	color: var(--black);
+	position: relative;
+}
+
+.inputStyle ::placeholder,
+.inputStyle input {
+	font-style: normal;
+	font-size: 20px;
+}
+.width-responsive {
+	width: 700px;
+	max-width: 85%;
+	margin: 40px auto;
+}
+.title {
+	font-size: 22px;
+	font-family: 'Righteous';
+}
+
+.bar_10 { width: 10% }
+.bar_20 { width: 20% }
+.bar_30 { width: 30% }
+.bar_40 { width: 40% }
+.bar_50 { width: 50% }
+.bar_60 { width: 60% }
+.bar_70 { width: 70% }
+.bar_80 { width: 80% }
+.bar_90 { width: 90% }
+.bar_100 { width: 100% }
+.p-responsif { padding: 30px 30px }
+.color-white { color: var(--white)!important }
+.subheading { 
+	font-family: 'Poppins';
+	font-size: 30px;
+}
+
+a, a:link, a:active, a:visited, a:hover { color: inherit }
+
+p { font-size: 18px;line-height: 28px }
+h2, h3 { font-weight: normal }
+h1 { font-size: 40px;line-height: 50px }
+h2 { font-size: 35px;line-height: 45px }
+h3 { font-size: 30px;line-height: 40px }
+h4 { font-size: 25px;line-height: 35px }
+h5 { font-size: 20px;line-height: 30px }
+h6 { font-size: 15px;line-height: 25px }
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Righteous';
+	letter-spacing: .8px;
+}
+
+.header a > img {
+	width: 30px;
+}
+
+.header a > img:hover {
+	animation: rotate 1s ease 1;
+}
+
+.section__two_wrap .box {
+	background: var(--linear-theme);
+	text-align: center;
+}
+
+.section__two_wrap .box li:not(.active) { color: white }
+.section__two_wrap .box li.active,
+.section__two_wrap .box li {
+	width: 45%;
+	padding: 8px 0;
+	border-radius: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.section__two_wrap .box li.active { 
+	background-color: var(--white);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+	animation: shadowEffect 0.9s forwards 1;
+}
+
+
+
+.inputStyle { 
+	border-bottom: 1px solid rgba(0, 0, 0, .3) 
+}
+.inputStyle > input {
+	width: 90%;
+}
+
+.inputStyle > img { width: 30px }
+.inputStyle > img:hover { transform: scale(1.1) rotate(-5deg) }
+
+.section__two_main ul .item {
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.tabcontent { display: none }
+.list_of_skill p { 
+	font-size: 17px;
+	line-height: 27px 
+}
+
+.list_of_skill .subtext { 
+	font-size: 15px;
+	line-height: 20px;
+	opacity: .8 
+}
+
+.list_of_skill .item .description li { height: 30px }
+.list_of_skill .item .description { margin-left: 48px }
+.list_of_skill .item .description p { width: 250px }
+.skill__bar:hover { transform: scale(1.2) }
+.skill__bar { 
+	content: '';
+	display: block; 
+	height: 12px;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+
+
+.skill__bar .bar__size {
+	content: '';
+	height: 100%;
+	background: var(--linear-theme);
+	animation: toFull 3s ease 1;
+}
+
+@keyframes toFull {
+	0% {
+		width: 0%
+	}
+}
+
+@keyframes rotate {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  10% {
+	    transform: rotate(10deg);
+	  }
+	  30% {
+	    transform: rotate(0deg);
+	  }
+	  40% {
+	    transform: rotate(-10deg);
+	  }
+	  50% {
+	    transform: rotate(0deg);
+	  }
+	  60% {
+	    transform: rotate(5deg);
+	  }
+	  70% {
+	    transform: rotate(0deg);
+	  }
+	  80% {
+	    transform: rotate(-5deg);
+	  }
+	  100% {
+	    transform: rotate(0deg);
+	  }
+}
+
+@keyframes shadowEffect {
+	0% {
+		background-color: transparent;
+		box-shadow: transparent;
+	}
+}

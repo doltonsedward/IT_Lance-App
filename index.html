@@ -14,5 +14,248 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+	
+	<!-- header & nav -->
+	<div class="header p-responsif">
+        <div class="d-flex-responsif">
+          <a class="menuBtn" href="#menu">
+            <img src="assets/img/bar.png" />
+          </a>
+          <a href="">
+          	<img src="assets/img/search.png" />
+          </a>
+        </div>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <span>Services</span>
+              <ul>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Design</a></li>
+                <li>
+                  <span>Other</span>
+                  <ul>
+                    <li></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <span>About us</span>
+                <ul>
+                    <li><a href="pages/about">History</a></li>
+                    <li>
+                        <span>The team</span>
+                        <ul>
+                            <li>
+                                <a href="#about/team/management">Management</a>
+                            </li>
+                            <li>
+                                <a href="#about/team/sales">Sales</a>
+                            </li>
+                            <li>
+                                <a href="#about/team/development">Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#about/address">Our address</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="Divider">Beberapa</li>
+            <li><a href="advanced.html">Tips & Trick</a></li>
+            <li><a href="onepage.html">Q & A</a></li>
+        </ul>
+    </nav>
+    <!-- tutup -->
+
+    <!-- wrap -->
+    <div class="wrap">
+	    <div class="section__one_wrap p-top-btm-m" align="center">
+	    	<h1>Hidup itu</h1>
+	    	<p class="subheading">Simple</p>
+	    </div>
+	    <div class="section__two_wrap">
+	    	<ul class="tabs box width-responsive b-radius-s p-s d-flex-vertical" id="listItem">
+	    		<li onclick="getActive(event, 'panelHire')" class="tabitems tes active">
+	    			<p>Hire</p>
+	    		</li>
+	    		<li onclick="getActive(event, 'panelJoin')" class="tabitems tes">
+	    			<p>Join</p>
+	    		</li>
+	    	</ul>
+	    </div>
+    </div>
+    <!-- tutup -->
+
+    <!-- main -->
+    <div class="main">
+	    <div id="panelHire" class="tabcontent" style="display:block;">
+	    	<div class="section__one_main width-responsive" align="center">
+		    	<div class="inputStyle ptb-l d-flex-vertical">
+		    		<input class="ptb-l" type="text" name="" placeholder="Tolong buatkan.." />
+		    		<img src="assets/img/send.png" />
+		    	</div>
+		    </div>
+		    <div class="section__two_main width-responsive">
+		    	<p class="title mb-l">Rekomended</p>
+		    	<ul>
+		    		<li class="item mb-l p-l b-radius-s" data-aos="zoom-out-down"><p>Tolong buatkan web</p></li>
+		    		<li class="item mb-l p-l b-radius-s" data-aos="zoom-out-down"><p>Tolong buatkan logo yang aestetik lengkap dengan filosofinya</p></li>
+		    		<li class="item mb-l p-l b-radius-s" data-aos="zoom-out-down"><p>Bisa hack akun sosmed ku? gabisa ya?</p></li>
+		    		<li class="item mb-l p-l b-radius-s" data-aos="zoom-out-down"><p>Tolong buatkan app banking</p></li>
+		    	</ul>
+		    	<br>
+		    </div>
+	    </div>
+	    <div id="panelJoin" class="tabcontent">
+	    	<div class="section__one_main width-responsive" align="center">
+		    	<div class="inputStyle ptb-l d-flex-vertical">
+		    		<input class="ptb-l" type="text" name="" placeholder="Saya mau jadi freelancer.." />
+		    		<img src="assets/img/send.png" />
+		    	</div>
+		    </div>
+		    <div class="section__two_main width-responsive">
+		    	<p class="title mb-l">Freelancer kami</p>
+		    	<ul class="list_of_skill">
+		    		<li class="item mb-l p-l b-radius-s">
+		    			<div class="d-flex-only">
+		    				<img width="40px" src="assets/img/profile.png" />
+		    				<div class="ml-s">
+		    					<p>Dollong</p>
+		    					<p class="subtext">Front end web developer</p>
+		    				</div>
+		    			</div>
+		    			<br />
+		    			<div class="section__two_item">
+		    				<ul class="description ml-m">
+		    					<li class="d-flex-vertical">
+		    						<p>Coding</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_70 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Design</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_80 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Services</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_20 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					
+		    				</ul>
+		    			</div>
+		    		</li>
+		    		<li class="item mb-l p-l b-radius-s">
+		    			<div class="d-flex-only">
+		    				<img width="40px" src="assets/img/profile.png" />
+		    				<div class="ml-s">
+		    					<p>W4N</p>
+		    					<p class="subtext">Front end web developer</p>
+		    				</div>
+		    			</div>
+		    			<br />
+		    			<div class="section__two_item">
+		    				<ul class="description ml-m">
+		    					<li class="d-flex-vertical">
+		    						<p>Coding</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_50 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Design</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_30 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Services</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_80 b-radius-s"></div>
+		    						</span>
+		    					</li>
+
+		    				</ul>
+		    			</div>
+		    		</li>
+		    		<li class="item mb-l p-l b-radius-s">
+		    			<div class="d-flex-only">
+		    				<img width="40px" src="assets/img/profile.png" />
+		    				<div class="ml-s">
+		    					<p>Gopud</p>
+		    					<p class="subtext">Front end web developer</p>
+		    				</div>
+		    			</div>
+		    			<br />
+		    			<div class="section__two_item">
+		    				<ul class="description ml-m">
+		    					<li class="d-flex-vertical">
+		    						<p>Coding</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_20 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Design</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_40 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					<li class="d-flex-vertical">
+		    						<p>Services</p>
+		    						<span class="skill__bar width-responsive ml-l b-radius-s">
+		    							<div class="bar__size bar_40 b-radius-s"></div>
+		    						</span>
+		    					</li>
+		    					
+		    				</ul>
+		    			</div>
+		    		</li>
+		    	</ul>
+		    </div>
+	    </div>
+    </div>
+    <!-- tutup -->
+
+    <!-- scripts -->
+    <script src="assets/js/mmenu.polyfills.js"></script>
+    <script src="assets/js/mmenu.js"></script>
+    <script src="assets/js/item_mmnu.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+    	AOS.init();
+
+    	hide = 'none';
+    	show = 'block';
+
+    	function getActive(event, panel) {
+    		var i, tabitems, tabcontent;
+    		tabcontent = document.getElementsByClassName('tabcontent');
+    		for ( i = 0; i < tabcontent.length; i++ ) {
+    			tabcontent[i].style.display = hide;
+    		}
+
+    		tabitems = document.getElementsByClassName('tabitems');
+    		for ( i = 0; i < tabitems.length; i++ ) {
+    			tabitems[i].className = tabitems[i].className.replace('active', '');
+    		}
+
+    		document.getElementById(panel).style.display = show;
+    		event.currentTarget.className += ' active';
+    	}
+
+    	var hide, show;
+    </script>
+    <!-- tutup -->
 </body>
 </html>
